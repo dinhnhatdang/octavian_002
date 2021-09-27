@@ -1,0 +1,39 @@
+.header {
+  background-color: white;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 3px 17px 0px rgba(168, 168, 168, 0.69);
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+  }
+  &-phone {
+    color: $gray;
+    font-weight: 300;
+    a {
+      font-weight: 600;
+      margin-left: 15px;
+    }
+  }
+  @include maxw(1023px) {
+    &-phone {
+      display: none;
+    }
+    &-main {
+      padding: 20px 0;
+    }
+    .navigation {
+      gap: 0 25px;
+    }
+  }
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 0 60px;
+}

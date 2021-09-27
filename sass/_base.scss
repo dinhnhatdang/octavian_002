@@ -1,0 +1,110 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 1;
+  color: $gray-light;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+input,
+button,
+textarea,
+select {
+  font-family: $primary-font;
+  font-size: 14px;
+  outline: none;
+  border: 0;
+}
+input {
+  line-height: normal;
+}
+section[id] {
+  scroll-margin-top: 40px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.second-font {
+  font-family: $secondary-font;
+}
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: $primary-font;
+  height: 55px;
+  padding: 0 70px;
+  border-radius: 6px;
+
+  &--primary {
+    background-color: $blue;
+    transition: all 0.2s linear;
+    &:hover {
+      background-color: $gray-light;
+    }
+  }
+  &--secondary {
+    background-color: transparent;
+    background-image: linear-gradient(to right, #f475a0, #feac3d);
+    transition: all 0.2s linear;
+    &:hover {
+      background-image: linear-gradient(to left top, #f475a0, #feac3d);
+    }
+  }
+}
+a {
+  color: inherit;
+}
+h2,
+h3,
+h1,
+h4 {
+  color: $gray;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: lineH(56, 36);
+  margin-bottom: 30px;
+  font-family: $secondary-font;
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.desc--small {
+  font-size: 14px;
+  color: $gray-light;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 800;
+  font-family: $secondary-font;
+  color: $gray;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+@include maxw(767px) {
+  .heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 20px;
+  }
+}

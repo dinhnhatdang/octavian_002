@@ -1,0 +1,50 @@
+.menu {
+  display: none;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 100;
+  box-shadow: -7px 0px 13px -7px #727272;
+  &-close {
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+  }
+  &-list {
+    list-style: none;
+    height: 100%;
+    padding: 80px 30px 30px;
+  }
+  &-item {
+    margin-bottom: 15px;
+  }
+  &-link {
+    display: block;
+    padding: 15px;
+    text-transform: capitalize;
+    color: $gray;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+    &:hover {
+      color: white;
+      background-color: $blue;
+    }
+  }
+  &-phone {
+    color: $gray;
+    padding: 15px;
+    a {
+      color: inherit;
+      font-weight: bold;
+    }
+  }
+  &-toggle {
+    cursor: pointer;
+  }
+}
